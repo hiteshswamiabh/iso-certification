@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ISO Registration & Certification Services</title>
+  <meta name="description" content="Fast, reliable ISO registration and certification support. Get ISO 9001, 14001, 27001, 22000 and more with expert help." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --brand:#0d6efd;         /* Bootstrap primary */
+      --brand-dark:#0b5ed7;
+      --accent:#ffc107;        /* amber accent */
+      --ink:#0f172a;           /* deep slate */
+      --muted:#64748b;         /* slate-500 */
+      --bg:#f8fafc;            /* light */
+      --card:#ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg); }
+
+    /* Top bar */
+    .topbar { background: var(--ink); color: #fff; font-size: .9rem; }
+    .topbar a { color: #fff; text-decoration: none; }
+    .topbar .divider { opacity: .3; margin: 0 .75rem; }
+
+    /* Navbar */
+    .navbar-brand span { font-weight: 800; letter-spacing: .5px; }
+    .nav-link { font-weight: 500; }
+    .btn-cta { background: var(--accent); color: #000; font-weight: 700; }
+    .btn-cta:hover{ filter: brightness(.95); }
+
+    /* Hero */
+    .hero { background: linear-gradient(180deg, rgba(13,110,253,.07), rgba(255,255,255,0)); }
+    .badge-trust { background: #fff; border: 1px solid #e5e7eb; }
+    .hero-form { box-shadow: 0 20px 45px rgba(2,6,23,.08); border: 1px solid #eef2f7; }
+
+    /* Sections */
+    section { padding: 72px 0; }
+    .section-title { font-weight: 800; letter-spacing: -.3px; }
+    .lead-para { color: var(--muted); }
+
+    /* Cards */
+    .soft-card { background: var(--card); border: 1px solid #eef2f7; border-radius: 1rem; box-shadow: 0 6px 20px rgba(2,6,23,.04); }
+    .soft-card:hover { transform: translateY(-2px); transition: .2s ease; }
+
+    /* Process */
+    .step { position: relative; padding-left: 56px; }
+    .step .num { position: absolute; left: 0; top: 0; width: 40px; height: 40px; border-radius: 50%; background: var(--brand); color: #fff; display: grid; place-items: center; font-weight: 700; }
+    .timeline:before { content: ""; position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: #e5e7eb; }
+
+    /* Pricing */
+    .price { font-size: 2.25rem; font-weight: 800; }
+    .popular { border: 2px solid var(--brand); position: relative; }
+    .popular .ribbon { position:absolute; top:-12px; right:16px; background: var(--brand); color:#fff; font-size:.75rem; padding:4px 8px; border-radius: .5rem; }
+
+    /* FAQ */
+    .accordion-button { font-weight: 600; }
+
+    /* CTA Band */
+    .cta-band { background: linear-gradient(90deg, var(--brand), var(--brand-dark)); color: #fff; border-radius: 1rem; }
+
+    /* Footer */
+    footer { background: #0b1220; color: #cbd5e1; }
+    footer a { color: #cbd5e1; text-decoration: none; }
+    footer a:hover { color: #fff; }
+
+    /* Floating buttons */
+    .float-btns { position: fixed; right: 16px; bottom: 16px; z-index: 1040; display: flex; flex-direction: column; gap: 10px; }
+
+    .badge-list i { width: 22px; }
+  </style>
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar py-2 d-none d-md-block">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+919999999999" class="ms-1">+91 8054444117</a>
+        <span class="divider">|</span>
+        <i class="fa-regular fa-envelope"></i>
+        <a href="mailto:info@lmbccert.com" class="ms-1">info@lmbccert.com</a>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="fa-solid fa-bolt"></i> 24×7 Expert Support</span>
+        <span><i class="fa-solid fa-shield-halved"></i> 100% Secure</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="fa-solid fa-certificate text-primary fs-4"></i>
+        <span>ISO<span class="text-primary">Assist</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-cta ms-lg-3">Get Free Consultation</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <span class="badge badge-trust rounded-pill px-3 py-2 mb-3"><i class="fa-solid fa-star me-1 text-warning"></i>Trusted by 15,000+ businesses</span>
+          <h1 class="display-5 fw-bold mb-3">End‑to‑End <span class="text-primary">ISO Registration</span> & Certification Support</h1>
+          <p class="lead lead-para">Get ISO 9001, 14001, 27001, 22000, 45001 and more—fast. We handle documentation, audits, training and certification with accredited bodies.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#pricing" class="btn btn-primary btn-lg"><i class="fa-solid fa-tags me-2"></i>View Packages</a>
+            <a href="#process" class="btn btn-outline-primary btn-lg"><i class="fa-solid fa-diagram-project me-2"></i>See Process</a>
+          </div>
+          <div class="d-flex gap-4 mt-4 small text-muted">
+            <div><i class="fa-solid fa-circle-check text-success me-1"></i> Documentation Support</div>
+            <div><i class="fa-solid fa-circle-check text-success me-1"></i> Fast Turnaround</div>
+            <div><i class="fa-solid fa-circle-check text-success me-1"></i> Affordable Pricing</div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="soft-card p-4 rounded-4 hero-form bg-white">
+            <h5 class="fw-bold mb-1">Free ISO Consultation</h5>
+            <p class="text-muted mb-4">Tell us your requirement. We’ll get back within minutes.</p>
+            
+<form id="isoForm" class="needs-validation" novalidate>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Name</label>
+      <input type="text" name="name" class="form-control" required>
+      <div class="invalid-feedback">Please enter your name</div>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Phone</label>
+      <input type="tel" name="phone" class="form-control" pattern="[0-9]{10}" placeholder="10-digit" required>
+      <div class="invalid-feedback">Enter a valid 10-digit number</div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Email</label>
+      <input type="email" name="email" class="form-control" required>
+      <div class="invalid-feedback">Please enter a valid email</div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Interested ISO</label>
+      <select name="iso_standard" class="form-select" required>
+        <option value="" selected disabled>Select Standard</option>
+        <option>ISO 9001 – Quality Management</option>
+        <option>ISO 14001 – Environmental</option>
+        <option>ISO 27001 – Information Security</option>
+        <option>ISO 22000 – Food Safety</option>
+        <option>ISO 45001 – OH&S</option>
+        <option>Other / Not sure</option>
+      </select>
+      <div class="invalid-feedback">Please choose a standard</div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Message</label>
+      <textarea name="message" class="form-control" rows="3" placeholder="Briefly describe your need..."></textarea>
+    </div>
+
+    <div class="col-12 d-grid">
+      <button class="btn btn-primary btn-lg" type="submit">
+        <i class="fa-solid fa-paper-plane me-2"></i> Request Callback
+      </button>
+    </div>
+
+    <div class="col-12 small text-muted text-center">
+      By submitting, you agree to our Terms & Privacy.
+    </div>
+  </div>
+</form>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Logos / Social proof -->
+      <div class="row mt-5 g-3 align-items-center">
+        <div class="col-md-3"><span class="badge bg-light text-dark w-100 py-3 border"><i class="fa-solid fa-rocket me-2"></i>Quick Turnaround</span></div>
+        <div class="col-md-3"><span class="badge bg-light text-dark w-100 py-3 border"><i class="fa-solid fa-crown me-2"></i>Expert Consultants</span></div>
+        <div class="col-md-3"><span class="badge bg-light text-dark w-100 py-3 border"><i class="fa-solid fa-shield me-2"></i>Accredited Partners</span></div>
+        <div class="col-md-3"><span class="badge bg-light text-dark w-100 py-3 border"><i class="fa-solid fa-face-smile me-2"></i>4.9/5 Rated</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">ISO Standards We Cover</h2>
+        <p class="lead-para">Comprehensive assistance for documentation, training, internal audit and certification.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Service Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card p-4 h-100">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-solid fa-check-double fs-3 text-primary me-3"></i>
+              <h5 class="mb-0">ISO 9001 (QMS)</h5>
+            </div>
+            <p class="text-muted">Quality Management System for consistent products & services, customer satisfaction and continual improvement.</p>
+            <ul class="list-unstyled badge-list small text-muted">
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Gap Analysis</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Documentation & SOPs</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Internal Audit & Training</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card p-4 h-100">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-solid fa-earth-asia fs-3 text-primary me-3"></i>
+              <h5 class="mb-0">ISO 14001 (EMS)</h5>
+            </div>
+            <p class="text-muted">Environmental management for regulatory compliance, resource efficiency and reduced impact.</p>
+            <ul class="list-unstyled badge-list small text-muted">
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Risk & Aspect Register</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Legal Compliance Matrix</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Audits & Trainings</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card p-4 h-100">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-solid fa-shield-halved fs-3 text-primary me-3"></i>
+              <h5 class="mb-0">ISO 27001 (ISMS)</h5>
+            </div>
+            <p class="text-muted">Information security—policies, risk treatment plan, SoA, controls implementation and audit readiness.</p>
+            <ul class="list-unstyled badge-list small text-muted">
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Asset & Risk Register</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Policies & Procedures</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Audit Support</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card p-4 h-100">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-solid fa-bowl-food fs-3 text-primary me-3"></i>
+              <h5 class="mb-0">ISO 22000 (FSMS)</h5>
+            </div>
+            <p class="text-muted">Food safety system with HACCP planning, PRPs and regulatory compliance across the food chain.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card p-4 h-100">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-solid fa-hard-hat fs-3 text-primary me-3"></i>
+              <h5 class="mb-0">ISO 45001 (OH&S)</h5>
+            </div>
+            <p class="text-muted">Occupational health & safety management for safer workplaces and reduced incidents.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card p-4 h-100">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-solid fa-boxes-stacked fs-3 text-primary me-3"></i>
+              <h5 class="mb-0">IATF 16949, GMP, CE & more</h5>
+            </div>
+            <p class="text-muted">Automotive, medical devices, product marks and other schemes on request.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="bg-white">
+    <div class="container">
+      <div class="row align-items-start g-5">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-3">Simple, Transparent Process</h2>
+          <p class="lead-para">From kickoff to certification—our experts stay with you at every step.</p>
+          <div class="position-relative timeline mt-4">
+            <div class="step mb-4">
+              <div class="num">1</div>
+              <h6 class="fw-bold mb-1">Free Consultation & Scope</h6>
+              <p class="text-muted mb-0">Understand business, sites, headcount, applicable standards and certification goals.</p>
+            </div>
+            <div class="step mb-4">
+              <div class="num">2</div>
+              <h6 class="fw-bold mb-1">Gap Analysis & Plan</h6>
+              <p class="text-muted mb-0">Audit current practices vs. standard clauses; create prioritized implementation plan.</p>
+            </div>
+            <div class="step mb-4">
+              <div class="num">3</div>
+              <h6 class="fw-bold mb-1">Documentation & Training</h6>
+              <p class="text-muted mb-0">Policies, SOPs, records templates and staff trainings tailored to your operations.</p>
+            </div>
+            <div class="step mb-4">
+              <div class="num">4</div>
+              <h6 class="fw-bold mb-1">Internal Audit & MRM</h6>
+              <p class="text-muted mb-0">Conduct internal audit, corrective actions and management review meeting.</p>
+            </div>
+            <div class="step">
+              <div class="num">5</div>
+              <h6 class="fw-bold mb-1">Certification Audit Support</h6>
+              <p class="text-muted mb-0">Coordinate with accredited body through Stage 1 & Stage 2 until certificate issuance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="soft-card p-4">
+            <h5 class="fw-bold mb-3">Documents Typically Required</h5>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <ul class="list-group list-group-flush small">
+                  <li class="list-group-item"><i class="fa-regular fa-file-lines me-2 text-primary"></i>Business Registration (GST/Udyam)</li>
+                  <li class="list-group-item"><i class="fa-regular fa-file-lines me-2 text-primary"></i>Scope of Activities</li>
+                  <li class="list-group-item"><i class="fa-regular fa-file-lines me-2 text-primary"></i>Org Chart & Headcount</li>
+                  <li class="list-group-item"><i class="fa-regular fa-file-lines me-2 text-primary"></i>Process Flow / SOPs</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-group list-group-flush small">
+                  <li class="list-group-item"><i class="fa-regular fa-file-lines me-2 text-primary"></i>Records & Forms</li>
+                  <li class="list-group-item"><i class="fa-regular fa-file-lines me-2 text-primary"></i>Risk Assessments</li>
+                  <li class="list-group-item"><i class="fa-regular fa-file-lines me-2 text-primary"></i>Training Evidence</li>
+                  <li class="list-group-item"><i class="fa-regular fa-file-lines me-2 text-primary"></i>Legal Compliance</li>
+                </ul>
+              </div>
+            </div>
+            <div class="alert alert-info mt-3"><i class="fa-solid fa-circle-info me-2"></i>Exact list varies by standard, site count and industry. We'll guide you.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="benefits">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <p class="lead-para">Proven frameworks, predictable timelines and transparent pricing.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="soft-card p-4 h-100 text-center">
+            <i class="fa-solid fa-user-tie fs-2 text-primary mb-2"></i>
+            <h6 class="fw-bold">Senior Consultants</h6>
+            <p class="text-muted small mb-0">Average 10+ years of multi-standard, multi‑site experience.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="soft-card p-4 h-100 text-center">
+            <i class="fa-solid fa-indian-rupee-sign fs-2 text-primary mb-2"></i>
+            <h6 class="fw-bold">Fixed, All‑Inclusive</h6>
+            <p class="text-muted small mb-0">No surprises—deliverables, audits and timelines clearly defined.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="soft-card p-4 h-100 text-center">
+            <i class="fa-solid fa-clock fs-2 text-primary mb-2"></i>
+            <h6 class="fw-bold">Faster Go‑Live</h6>
+            <p class="text-muted small mb-0">Templates & accelerators to reach audit‑ready state quickly.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="soft-card p-4 h-100 text-center">
+            <i class="fa-solid fa-shield-check fs-2 text-primary mb-2"></i>
+            <h6 class="fw-bold">Accredited Partners</h6>
+            <p class="text-muted small mb-0">Tie‑ups with leading certification bodies for credible certificates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Pricing</h2>
+        <p class="lead-para">Choose the plan that fits your organization size and scope.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card p-4 h-100">
+            <h6 class="fw-bold">Starter</h6>
+            <div class="price my-2">₹5,999</div>
+            <p class="text-muted small">Micro & small enterprises, single site</p>
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Documentation kit</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>2 remote training sessions</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Internal audit checklist</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card p-4 h-100 popular rounded-4">
+            <div class="ribbon">Most Popular</div>
+            <h6 class="fw-bold">Growth</h6>
+            <div class="price my-2">₹11,999</div>
+            <p class="text-muted small">SMBs with broader scope or multiple processes</p>
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Custom SOPs & records</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Onsite/remote mix support</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Stage‑1 audit readiness</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary w-100">Choose Growth</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card p-4 h-100">
+            <h6 class="fw-bold">Enterprise</h6>
+            <div class="price my-2">Custom</div>
+            <p class="text-muted small">Multi‑site, multi‑standard rollouts</p>
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Integrated management system</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Cross‑functional workshops</li>
+              <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-success"></i>Dedicated project manager</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-primary w-100">Talk to Expert</a>
+          </div>
+        </div>
+      </div>
+      <p class="small text-muted mt-3">*Prices exclude certification body fees and applicable taxes. Detailed proposal on request.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <h2 class="section-title">What Clients Say</h2>
+          <p class="lead-para">Real outcomes—better processes, stronger compliance and customer confidence.</p>
+        </div>
+        <div class="col-lg-7">
+          <div id="quotes" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner soft-card p-4">
+              <div class="carousel-item active">
+                <blockquote class="mb-0">
+                  <p class="mb-2">“Swift, well‑organized and super helpful during the audit. We got ISO 9001 in one go.”</p>
+                  <div class="small text-muted">— Ops Head, Manufacturing</div>
+                </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="mb-0">
+                  <p class="mb-2">“Their ISO 27001 toolkit saved weeks. Clear templates and practical guidance.”</p>
+                  <div class="small text-muted">— CTO, SaaS Company</div>
+                </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="mb-0">
+                  <p class="mb-2">“Transparent pricing and reliable timelines. Highly recommended.”</p>
+                  <div class="small text-muted">— Founder, Food Brand</div>
+                </blockquote>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#quotes" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#quotes" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="lead-para">Everything you need to know about ISO certification.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAcc">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true" aria-controls="a1">How long does ISO certification take?</button>
+              </h2>
+              <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+                <div class="accordion-body">For a small single‑site company, typical timelines are 4–8 weeks for implementation plus 2–3 weeks for certification audits. Complex scopes may take longer.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">What are certification body fees?</button>
+              </h2>
+              <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">CB fees depend on standard, employee count, risk level and audit days. We help you get comparable quotes from accredited bodies.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">Do you provide templates and training?</button>
+              </h2>
+              <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Yes—policy templates, SOPs, records, audit checklists and awareness trainings are included as per plan.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">Is the certificate valid internationally?</button>
+              </h2>
+              <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">We work with reputed accreditation bodies so your certificate is widely accepted by customers and regulators.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="soft-card p-4 h-100">
+            <h6 class="fw-bold mb-2">Need more help?</h6>
+            <p class="text-muted small">Chat with our experts on WhatsApp or request a callback.</p>
+            <a href="#contact" class="btn btn-success w-100 mb-2"><i class="fa-brands fa-whatsapp me-2"></i>Chat on WhatsApp</a>
+            <a href="#contact" class="btn btn-outline-secondary w-100">Request Callback</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="cta-band p-4 p-lg-5 mb-4">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <h2 class="mb-1">Ready to get ISO certified?</h2>
+            <p class="mb-0">Speak to an expert for a free plan & quote tailored to your scope.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="#contactForm" class="btn btn-light btn-lg">Book Free Consultation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4" id="contactForm">
+        <div class="col-lg-6">
+          <div class="soft-card p-4 h-100">
+            <h5 class="fw-bold mb-3">Contact Us</h5>
+            
+<form id="isoForm" class="needs-validation" novalidate>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Name</label>
+      <input type="text" name="name" class="form-control" required>
+      <div class="invalid-feedback">Please enter your name</div>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Phone</label>
+      <input type="tel" name="phone" class="form-control" pattern="[0-9]{10}" placeholder="10-digit" required>
+      <div class="invalid-feedback">Enter a valid 10-digit number</div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Email</label>
+      <input type="email" name="email" class="form-control" required>
+      <div class="invalid-feedback">Please enter a valid email</div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Interested ISO</label>
+      <select name="iso_standard" class="form-select" required>
+        <option value="" selected disabled>Select Standard</option>
+        <option>ISO 9001 – Quality Management</option>
+        <option>ISO 14001 – Environmental</option>
+        <option>ISO 27001 – Information Security</option>
+        <option>ISO 22000 – Food Safety</option>
+        <option>ISO 45001 – OH&S</option>
+        <option>Other / Not sure</option>
+      </select>
+      <div class="invalid-feedback">Please choose a standard</div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Message</label>
+      <textarea name="message" class="form-control" rows="3" placeholder="Briefly describe your need..."></textarea>
+    </div>
+
+    <div class="col-12 d-grid">
+      <button class="btn btn-primary btn-lg" type="submit">
+        <i class="fa-solid fa-paper-plane me-2"></i> Request Callback
+      </button>
+    </div>
+
+    <div class="col-12 small text-muted text-center">
+      By submitting, you agree to our Terms & Privacy.
+    </div>
+  </div>
+</form>
+
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="soft-card p-4 h-100">
+            <h5 class="fw-bold mb-3">Our Offices</h5>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-3 border rounded-3 h-100">
+                  <h6 class="mb-1">Mumbai</h6>
+                  <div class="small text-muted">BKC, Bandra (E)<br>+91 8054444117</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 border rounded-3 h-100">
+                  <h6 class="mb-1">Bengaluru</h6>
+                  <div class="small text-muted">MG Road, CBD<br>+91 8054444117</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 border rounded-3 h-100">
+                  <h6 class="mb-1">Delhi NCR</h6>
+                  <div class="small text-muted">Noida Sector 62<br>+91 8054444117</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 border rounded-3 h-100">
+                  <h6 class="mb-1">Chennai</h6>
+                  <div class="small text-muted">Guindy Industrial Estate<br>+91 8054444117</div>
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-secondary mt-3 small"><i class="fa-regular fa-clock me-1"></i>Mon–Sat: 9:30 AM – 7:00 PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-5 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="fa-solid fa-certificate text-primary fs-4"></i>
+            <span class="fs-5 fw-bold">ISO<span class="text-primary">Assist</span></span>
+          </div>
+          <p class="small">We simplify ISO implementation and certification for businesses of all sizes across India and beyond.</p>
+          <div class="d-flex gap-3">
+            <a href="#" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold">Company</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold">Policies</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold">Contact</h6>
+          <ul class="list-unstyled small">
+            <li><i class="fa-solid fa-phone me-2"></i>+91 8054444117</li>
+            <li><i class="fa-regular fa-envelope me-2"></i>info@lmbccert.com</li>
+            <li><i class="fa-solid fa-location-dot me-2"></i>Mumbai • Bengaluru • Delhi NCR • Chennai</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary-subtle mt-4" />
+      <div class="d-flex justify-content-between align-items-center py-3 small text-secondary">
+        <div>© <span id="year"></span> ISOAssist. All rights reserved.</div>
+        <a href="#" class="text-decoration-none" id="backToTop"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating buttons -->
+  <div class="float-btns">
+    <a href="tel:+918054444117" class="btn btn-primary rounded-pill shadow"><i class="fa-solid fa-phone me-2"></i>Call</a>
+    <a href="https://wa.me/918054444117" class="btn btn-success rounded-pill shadow"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Form validation (Bootstrap)
+    (function () {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          } else {
+            event.preventDefault();
+            // Simulate success (replace with your AJAX/integration)
+            const btn = form.querySelector('button[type="submit"]');
+            const old = btn.innerHTML;
+            btn.disabled = true; btn.innerHTML = '<i class="fa-solid fa-circle-check me-2"></i> Submitted';
+            setTimeout(()=>{ btn.disabled=false; btn.innerHTML = old; form.reset(); form.classList.remove('was-validated'); alert('Thanks! We\'ll contact you shortly.'); }, 1200);
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+
+    // Back to top
+    document.getElementById('backToTop').addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    })
+
+    // Smooth nav scroll for anchor links
+    document.querySelectorAll('a.nav-link').forEach(a => {
+      a.addEventListener('click', (e) => {
+        if(a.getAttribute('href').startsWith('#')){
+          e.preventDefault();
+          const el = document.querySelector(a.getAttribute('href'));
+          if(el){ window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' }); }
+        }
+      });
+    });
+  </script>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("Kc-L4Wc8TkyXUnzEF"); // Your Public Key
+  })();
+
+  document.querySelectorAll("#isoForm").forEach(function(form){
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (!this.checkValidity()) {
+        this.classList.add("was-validated");
+        return;
+      }
+      emailjs.sendForm("service_f0c67t6", "template_3tldoeb", this)
+        .then(function() {
+          alert("✅ Your request has been sent! We will contact you shortly.");
+          form.reset();
+          form.classList.remove("was-validated");
+        }, function(error) {
+          alert("❌ Failed to send request: " + JSON.stringify(error));
+        });
+    });
+  });
+</script>
+
+</body>
+</html>
